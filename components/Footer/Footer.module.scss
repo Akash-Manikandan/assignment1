@@ -65,10 +65,12 @@
   flex-direction: column;
 }
 .links {
-  display: flex;
+  display: grid;
   align-items: center;
   gap: 20px;
+  grid-template-columns: repeat(6, 1fr);
   width: 100%;
+  
 }
 .socialMedia {
   display: flex;
@@ -89,8 +91,13 @@
     flex-direction: column;
     width: 100%;
     gap: 20px;
-    *{
+    * {
       justify-content: flex-start;
     }
+  }
+}
+@media screen and (max-width: 500px) {
+  .links {
+    grid-template-columns: repeat(2, 1fr);
   }
 }
