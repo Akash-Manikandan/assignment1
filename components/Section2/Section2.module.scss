@@ -37,3 +37,15 @@
   padding-right: 20px;
   border-radius: 10px;
 }
+@media screen and (max-width: 600px) {
+  .container{
+    flex-direction: column;
+    width: 100%;
+  }
+  .content1{
+    width: 100%;
+  }
+  .content2{
+    width: 100%;
+  }
+}

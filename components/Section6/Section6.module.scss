@@ -1,0 +1,73 @@
+.container {
+  display: flex;
+  width: 95%;
+  height: 100%;
+  background-color: #f1f3f7;
+  padding: 30px;
+  gap: 60px;
+  border-radius: 20px;
+  margin-bottom: 20px;
+}
+.imageContainer {
+  flex: 2;
+}
+.image {
+  border-radius: 20px;
+}
+.innerContainer {
+  flex: 3;
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+  flex-direction: column;
+  width: 100%;
+}
+.textContainer {
+  display: flex;
+  justify-content: space-between;
+}
+.text {
+  background-color: rgba(60, 67, 235, 0.1);
+  padding: 15px;
+  border-radius: 10px;
+}
+.star {
+  color: #ffd400;
+  font-size: 30px;
+}
+.content {
+  font-size: 1.5rem;
+  line-height: 1.4;
+  font-weight: 400;
+}
+.bottomContainer {
+  display: flex;
+}
+.bottomImageContainer {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+.nameUniv {
+  display: flex;
+  gap: 3px;
+  flex-direction: column;
+}
+.line {
+  width: 1px;
+  margin-right: 1rem;
+  margin-left: 1rem;
+  align-self: stretch;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+@media screen and (max-width: 800px) {
+  .container{
+      flex-direction: column;
+  }
+}
+@media screen and (max-width: 600px) {
+  .textContainer{
+      flex-direction: column;
+      gap: 20px;
+  }
+}
