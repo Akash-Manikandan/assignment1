@@ -10,6 +10,7 @@ const CoverImage = () => {
         whileInView={{ opacity: 1 }}
         transition={{ duration: 1 }}
         whileHover={{ scale: 1.03 }}
+        viewport={{ once: true }}
       >
         <Image
           className={styles.image}
@@ -25,6 +26,7 @@ const CoverImage = () => {
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1 }}
         transition={{ duration: 1, delay: 0.5 }}
+        viewport={{ once: true }}
       >
         <Image
           className={styles.image}

@@ -13,6 +13,7 @@ const Section1 = () => {
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1, scale: [1.3, 1] }}
           transition={{ duration: 1 }}
+          viewport={{once:true}}
         >
           <Image src="/images/cat.png" alt="cat" width={60} height={60} />
         </motion.div>
@@ -20,6 +21,7 @@ const Section1 = () => {
           className={styles.highlighedText}
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
+          viewport={{once:true}}
           transition={{ duration: 1 }}
         >
           Lorem ipsum dolor sit amet, consectetur
@@ -32,6 +34,7 @@ const Section1 = () => {
             initial={{ y: -50 }}
             whileInView={{ y: 0 }}
             transition={{ duration: 0.5 }}
+            viewport={{once:true}}
           >
             Except sint occaecat
           </motion.div>
@@ -39,6 +42,7 @@ const Section1 = () => {
             initial={{ x: -320 }}
             whileInView={{ x: 0 }}
             transition={{ duration: 0.5, delay: 0.5 }}
+            viewport={{once:true}}
             className={styles.colorText}
           >
             cupidatat
@@ -49,6 +53,7 @@ const Section1 = () => {
         className={styles.rightContent}
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1 }}
+        viewport={{once:true}}
         transition={{ duration: 1, delay: 1 }}
       >
         Sed ut perspiciatis unde omnis iste natus error accusantium doloremque

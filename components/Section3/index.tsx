@@ -9,6 +9,7 @@ const Section3 = () => {
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1 }}
         transition={{ duration: 1 }}
+        viewport={{once:true}}
         whileHover={{ scale: 1.03 }}
       >
         <Image
@@ -23,6 +24,7 @@ const Section3 = () => {
       <motion.div
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1 }}
+        viewport={{once:true}}
         transition={{ duration: 1 }}
         whileHover={{ scale: 1.03 }}
       >
@@ -40,6 +42,7 @@ const Section3 = () => {
         whileInView={{ opacity: 1 }}
         transition={{ duration: 1 }}
         whileHover={{ scale: 1.03 }}
+        viewport={{once:true}}
       >
         <Image
           src="/images/bunny.jpg"

@@ -18,6 +18,7 @@ const Section2 = () => {
         initial={{ x: -280 }}
         whileInView={{ x: 0 }}
         transition={{ duration: 0.5 }}
+        viewport={{once:true}}
       >
         At vero eos et accusamus iusto odio dignissimos.
       </motion.div>
@@ -26,6 +27,7 @@ const Section2 = () => {
           initial={{ x: 280 }}
           whileInView={{ x: 0 }}
           transition={{ duration: 0.5 }}
+          viewport={{once:true}}
         >
           Et harum quidem rerum facilis est et expedita distinctio. Nam libero
           tempore, cum soluta nobis est eligendi
@@ -34,6 +36,7 @@ const Section2 = () => {
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
           transition={{ duration: 0.5, delay: 0.3 }}
+          viewport={{once:true}}
         >
           <ThemeProvider theme={theme}>
             <Button variant="contained" className={styles.button}>

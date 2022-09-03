@@ -11,6 +11,7 @@ const Section4 = () => {
         initial={{ x: -100 }}
         whileInView={{ x: 0 }}
         transition={{ duration: 1 }}
+        viewport={{once:true}}
       >
         Optio Cumque
       </motion.div>
@@ -19,6 +20,7 @@ const Section4 = () => {
           initial={{ x: 100 }}
           whileInView={{ x: 0 }}
           transition={{ duration: 1 }}
+          viewport={{once:true}}
           className={styles.content1}
         >
           aut rerum
@@ -27,6 +29,7 @@ const Section4 = () => {
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
           transition={{ duration: 1, delay: 1 }}
+          viewport={{once:true}}
           className={styles.content2}
         >
           <div className={styles.image1}>
@@ -63,6 +66,7 @@ const Section4 = () => {
       <motion.div
         initial={{ y: 100 }}
         whileInView={{ y: 0 }}
+        viewport={{once:true}}
         transition={{ duration: 1 }}
         className={styles.innerContainer2}
       >

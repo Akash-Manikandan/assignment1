@@ -10,6 +10,7 @@ const Section6 = () => {
         initial={{ scale: 0 }}
         whileInView={{ scale: 1 }}
         transition={{ duration: 1 }}
+        viewport={{once:true}}
         whileHover={{ scale: 1.03 }}
       >
         <Image
@@ -26,6 +27,7 @@ const Section6 = () => {
           <motion.div
             className={styles.text}
             initial={{ opacity: 0 }}
+            viewport={{once:true}}
             whileInView={{ opacity: 1 }}
             transition={{ duration: 1, delay: 0.5 }}
           >
@@ -35,6 +37,7 @@ const Section6 = () => {
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
             transition={{ duration: 1, delay: 0.5 }}
+            viewport={{once:true}}
             className={styles.star}
           >
             &#9733;&#9733;&#9733;&#9733;&#9733;
@@ -45,6 +48,7 @@ const Section6 = () => {
           initial={{ scale: 0 }}
           whileInView={{ scale: 1 }}
           transition={{ duration: 1, delay: 0.7 }}
+          viewport={{once:true}}
         >
           “Sed ut perspiciatis unde omnis iste natus error sit voluptatem
           accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae
@@ -56,6 +60,7 @@ const Section6 = () => {
             initial={{ scale: 0 }}
             whileInView={{ scale: 1 }}
             transition={{ duration: 1, delay: 0.8 }}
+            viewport={{once:true}}
           >
             <div>
               <Image src="/images/man.png" alt="man" width={50} height={50} />

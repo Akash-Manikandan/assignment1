@@ -8,6 +8,7 @@ const Card = ({ title, content }: { title: string; content: string }) => {
       whileInView={{ opacity: 1 }}
       transition={{ duration: 1 }}
       className={styles.container}
+      viewport={{ once: true }}
     >
       <div className={styles.title}>{title}</div>
       <div>{content}</div>

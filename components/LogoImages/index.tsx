@@ -11,6 +11,7 @@ const LogoImages = () => {
         initial={{ scale: 0.1 }}
         whileInView={{ scale: 1 }}
         transition={{ duration: 1 }}
+        viewport={{once:true}}
       >
         <Image
           className={styles.image}

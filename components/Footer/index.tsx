@@ -22,6 +22,7 @@ const Footer = () => {
           initial={{ scale: 0 }}
           whileInView={{ scale: 1 }}
           transition={{ duration: 1 }}
+          viewport={{ once: true }}
         >
           <div className={styles.title}>Sed ut perspiciatis</div>
           <div className={styles.content}>
@@ -39,6 +40,7 @@ const Footer = () => {
           initial={{ scale: 0 }}
           whileInView={{ scale: 1 }}
           transition={{ duration: 1 }}
+          viewport={{ once: true }}
         >
           <div className={styles.title}>Nemo enim ipsam</div>
           <div className={styles.content}>
@@ -58,6 +60,7 @@ const Footer = () => {
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
           transition={{ duration: 1 }}
+          viewport={{ once: true }}
         >
           <div>
             <Image src="/images/svce.png" width={160} height={35} alt="SVCE" />
@@ -76,7 +79,13 @@ const Footer = () => {
           <a>Admission</a>
           <a>Get in Touch</a>
         </div>
-        <div className={styles.socialMedia}>
+        <motion.div
+          className={styles.socialMedia}
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          transition={{ duration: 1 }}
+          viewport={{ once: true }}
+        >
           <Image
             className={styles.image}
             src="/images/facebook.gif"
@@ -105,7 +114,7 @@ const Footer = () => {
             height={50}
             alt="discord"
           />
-        </div>
+        </motion.div>
       </div>
     </footer>
   );

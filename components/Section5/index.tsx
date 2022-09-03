@@ -26,6 +26,7 @@ const Section5 = () => {
         className={styles.select}
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1 }}
+        viewport={{once:true}}
         transition={{ duration: 1 }}
       >
         <select name="Lorem ipsum dolor" id="Lorem ipsum dolor">
@@ -46,6 +47,7 @@ const Section5 = () => {
         <motion.a
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
+          viewport={{once:true}}
           transition={{ duration: 1, delay: 0.2 }}
           onClick={() => setId(0)}
           style={{
@@ -58,6 +60,7 @@ const Section5 = () => {
         <motion.a
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
+          viewport={{once:true}}
           transition={{ duration: 1, delay: 0.4 }}
           onClick={() => setId(1)}
           style={{
@@ -71,6 +74,7 @@ const Section5 = () => {
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
           transition={{ duration: 1, delay: 0.6 }}
+          viewport={{once:true}}
           onClick={() => setId(2)}
           style={{
             backgroundColor: id == 2 ? list[id].color : "transparent",
@@ -83,6 +87,7 @@ const Section5 = () => {
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
           transition={{ duration: 1, delay: 0.8 }}
+          viewport={{once:true}}
           onClick={() => setId(3)}
           style={{
             backgroundColor: id == 3 ? list[id].color : "transparent",
@@ -95,6 +100,7 @@ const Section5 = () => {
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
           transition={{ duration: 1, delay: 1 }}
+          viewport={{once:true}}
           onClick={() => setId(4)}
           style={{
             backgroundColor: id == 4 ? list[id].color : "transparent",

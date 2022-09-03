@@ -23,6 +23,7 @@ const Header = () => {
         initial={{ scale: 0.1 }}
         animate={{ scale: 1 }}
         transition={{ duration: 1 }}
+        viewport={{once:true}}
       >
         <div className={styles.logo}>
           <Image src="/images/svce.png" width={160} height={35} alt="SVCE" />
