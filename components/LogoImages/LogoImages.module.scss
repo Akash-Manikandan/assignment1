@@ -1,13 +1,20 @@
-.container{
-    display: flex;
-    width: 100%;
-    align-items: center;
-    justify-content: space-around;
-    margin-bottom: 80px;
+.container {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: space-around;
+  margin-bottom: 80px;
 }
-.logoImages{
-    display: flex;
-    width: 100%;
-    align-items: center;
-    justify-content: space-around;
+.logoImages {
+  display: grid;
+  width: 100%;
+  align-items: center;
+  grid-auto-flow: column;
+  justify-content: space-around;
+}
+@media screen and (max-width: 800px) {
+  .logoImages {
+    grid-template-rows: repeat(3, 1fr);
+    gap: 20px;
+  }
 }
