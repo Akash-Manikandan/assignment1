@@ -1,0 +1,17 @@
+.container{
+    display: flex;
+    width: 100%;
+    padding-top: 50px;
+    grid-column: span 2;
+    flex-direction: column;
+}
+.image{
+    border-radius: 20px;
+}
+.logoList{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-evenly;
+    padding-top: 40px;
+}
