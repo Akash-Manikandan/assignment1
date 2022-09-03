@@ -3,6 +3,7 @@ import { Button, createTheme } from "@mui/material";
 import React from "react";
 import Image from "next/image";
 import styles from "./Footer.module.scss";
+import { motion } from "framer-motion";
 
 const theme = createTheme({
   palette: {
@@ -16,7 +17,12 @@ const Footer = () => {
     <footer className={styles.container}>
       <div className={styles.text}>Ready to get started?</div>
       <div className={styles.cardContainer}>
-        <div className={styles.card}>
+        <motion.div
+          className={styles.card}
+          initial={{ scale: 0 }}
+          whileInView={{ scale: 1 }}
+          transition={{ duration: 1 }}
+        >
           <div className={styles.title}>Sed ut perspiciatis</div>
           <div className={styles.content}>
             Et harum quidem rerum facilis est et expedita distinctio. Nam libero
@@ -27,8 +33,13 @@ const Footer = () => {
               Book Demo
             </Button>
           </ThemeProvider>
-        </div>
-        <div className={styles.card}>
+        </motion.div>
+        <motion.div
+          className={styles.card}
+          initial={{ scale: 0 }}
+          whileInView={{ scale: 1 }}
+          transition={{ duration: 1 }}
+        >
           <div className={styles.title}>Nemo enim ipsam</div>
           <div className={styles.content}>
             At vero eos et accusamus et iusto odio dignissimos ducimus qui
@@ -39,10 +50,15 @@ const Footer = () => {
               Request Callback
             </Button>
           </ThemeProvider>
-        </div>
+        </motion.div>
       </div>
       <div className={styles.bottomC}>
-        <div className={styles.bottomLogoC}>
+        <motion.div
+          className={styles.bottomLogoC}
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          transition={{ duration: 1 }}
+        >
           <div>
             <Image src="/images/svce.png" width={160} height={35} alt="SVCE" />
           </div>
@@ -53,7 +69,7 @@ const Footer = () => {
             Sriperumbudur (off Chennai) Tk. - 602 117 <br />
             Tamil Nadu, India
           </address>
-        </div>
+        </motion.div>
         <div className={styles.links}>
           <a>Campus</a>
           <a>Research</a>

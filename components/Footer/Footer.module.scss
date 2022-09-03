@@ -6,7 +6,7 @@
   width: 97%;
   border-radius: 20px;
   padding: 20px;
-  gap: 50px;
+  gap: 25px;
   margin-bottom: 15px;
 }
 .cardContainer {
@@ -82,8 +82,14 @@
 }
 
 @media screen and (max-width: 800px) {
+  .container{
+    width: 90%;
+  }
   .cardContainer {
     flex-direction: column;
+  }
+  .bottomC{
+    padding: 0;
   }
 }
 @media screen and (max-width: 900px) {

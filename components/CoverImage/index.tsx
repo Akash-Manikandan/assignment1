@@ -1,17 +1,31 @@
+import { motion } from "framer-motion";
 import Image from "next/image";
 import React from "react";
 import styles from "./CoverImage.module.scss";
 const CoverImage = () => {
   return (
     <div className={styles.container}>
-      <Image
-        className={styles.image}
-        src="/images/pic1.jpg"
-        width={4000}
-        height={1600}
-        alt="pic1"
-      />
-      <div className={styles.logoList}>
+      <motion.div
+        initial={{ opacity: 0 }}
+        whileInView={{ opacity: 1 }}
+        transition={{ duration: 1 }}
+        whileHover={{ scale: 1.03 }}
+      >
+        <Image
+          className={styles.image}
+          src="/images/pic1.jpg"
+          width={4000}
+          height={1600}
+          alt="pic1"
+          priority
+        />
+      </motion.div>
+      <motion.div
+        className={styles.logoList}
+        initial={{ opacity: 0 }}
+        whileInView={{ opacity: 1 }}
+        transition={{ duration: 1, delay: 0.5 }}
+      >
         <Image
           className={styles.image}
           src="/images/javascript.gif"
@@ -75,7 +89,7 @@ const CoverImage = () => {
           height={50}
           alt="linux"
         />
-      </div>
+      </motion.div>
     </div>
   );
 };

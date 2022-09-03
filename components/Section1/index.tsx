@@ -1,3 +1,4 @@
+import { motion } from "framer-motion";
 import Image from "next/image";
 import React from "react";
 import CoverImage from "../CoverImage";
@@ -5,27 +6,56 @@ import styles from "./Section1.module.scss";
 
 const Section1 = () => {
   return (
-    <div className={styles.container}>
+    <section className={styles.container}>
       <div className={styles.highlighedTextAndIcon}>
-        <div className={styles.highlighedLogo}>
+        <motion.div
+          className={styles.highlighedLogo}
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1, scale: [1.3, 1] }}
+          transition={{ duration: 1 }}
+        >
           <Image src="/images/cat.png" alt="cat" width={60} height={60} />
-        </div>
-        <div className={styles.highlighedText}>
+        </motion.div>
+        <motion.div
+          className={styles.highlighedText}
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          transition={{ duration: 1 }}
+        >
           Lorem ipsum dolor sit amet, consectetur
-        </div>
+        </motion.div>
       </div>
       <div></div>
       <div className={styles.downLeft}>
         <div>
-          Except sint occaecat <span>cupidatat</span>
+          <motion.div
+            initial={{ y: -50 }}
+            whileInView={{ y: 0 }}
+            transition={{ duration: 0.5 }}
+          >
+            Except sint occaecat
+          </motion.div>
+          <motion.div
+            initial={{ x: -320 }}
+            whileInView={{ x: 0 }}
+            transition={{ duration: 0.5, delay: 0.5 }}
+            className={styles.colorText}
+          >
+            cupidatat
+          </motion.div>
         </div>
       </div>
-      <div className={styles.rightContent}>
+      <motion.div
+        className={styles.rightContent}
+        initial={{ opacity: 0 }}
+        whileInView={{ opacity: 1 }}
+        transition={{ duration: 1, delay: 1 }}
+      >
         Sed ut perspiciatis unde omnis iste natus error accusantium doloremque
         laudantium, totam rem aperiam illo inventore veritatis et.
-      </div>
+      </motion.div>
       <CoverImage />
-    </div>
+    </section>
   );
 };
 

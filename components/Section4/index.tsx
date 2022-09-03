@@ -5,11 +5,30 @@ import styles from "./Section4.module.scss";
 
 const Section4 = () => {
   return (
-    <div className={styles.container}>
-      <div className={styles.products}>Optio Cumque</div>
+    <section className={styles.container}>
+      <motion.div
+        className={styles.products}
+        initial={{ x: -100 }}
+        whileInView={{ x: 0 }}
+        transition={{ duration: 1 }}
+      >
+        Optio Cumque
+      </motion.div>
       <div className={styles.innerContainer1}>
-        <div className={styles.content1}>aut rerum</div>
-        <div className={styles.content2}>
+        <motion.div
+          initial={{ x: 100 }}
+          whileInView={{ x: 0 }}
+          transition={{ duration: 1 }}
+          className={styles.content1}
+        >
+          aut rerum
+        </motion.div>
+        <motion.div
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          transition={{ duration: 1, delay: 1 }}
+          className={styles.content2}
+        >
           <div className={styles.image1}>
             <Image
               className={styles.img}
@@ -39,13 +58,18 @@ const Section4 = () => {
               priority
             />
           </motion.div>
-        </div>
+        </motion.div>
       </div>
-      <div className={styles.innerContainer2}>
+      <motion.div
+        initial={{ y: 100 }}
+        whileInView={{ y: 0 }}
+        transition={{ duration: 1 }}
+        className={styles.innerContainer2}
+      >
         et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum
         deleniti atque of real estate.
-      </div>
-    </div>
+      </motion.div>
+    </section>
   );
 };
 

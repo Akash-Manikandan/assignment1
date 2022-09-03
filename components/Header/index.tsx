@@ -3,6 +3,7 @@ import styles from "./Header.module.scss";
 import Image from "next/image";
 import { Button, useMediaQuery } from "@mui/material";
 import { createTheme, ThemeProvider } from "@mui/material/styles";
+import { motion } from "framer-motion";
 
 const theme = createTheme({
   palette: {
@@ -17,7 +18,12 @@ const Header = () => {
   const [showMenu, setShowMenu] = useState(false);
   return (
     <header className={styles.container}>
-      <nav className={styles.navigation}>
+      <motion.nav
+        className={styles.navigation}
+        initial={{ scale: 0.1 }}
+        animate={{ scale: 1 }}
+        transition={{ duration: 1 }}
+      >
         <div className={styles.logo}>
           <Image src="/images/svce.png" width={160} height={35} alt="SVCE" />
         </div>
@@ -28,15 +34,14 @@ const Header = () => {
             <a href="#">Events</a>
           </div>
         ) : (
-          <div
-            onClick={() => setShowMenu(!showMenu)}
-          >
+          <div onClick={() => setShowMenu(!showMenu)}>
             {!showMenu ? (
               <Image
                 width={30}
                 height={30}
                 alt="menu"
                 src={"/images/menu.png"}
+                priority
               />
             ) : (
               <Image
@@ -44,6 +49,7 @@ const Header = () => {
                 height={30}
                 alt="close"
                 src={"/images/close.png"}
+                priority
               />
             )}
           </div>
@@ -60,7 +66,7 @@ const Header = () => {
             Contact Us
           </Button>
         </ThemeProvider>
-      </nav>
+      </motion.nav>
     </header>
   );
 };

@@ -1,11 +1,17 @@
 import React from "react";
 import styles from "./LogoImages.module.scss";
 import Image from "next/image";
+import { motion } from "framer-motion";
 
 const LogoImages = () => {
   return (
     <div className={styles.container}>
-      <div className={styles.logoImages}>
+      <motion.div
+        className={styles.logoImages}
+        initial={{ scale: 0.1 }}
+        whileInView={{ scale: 1 }}
+        transition={{ duration: 1 }}
+      >
         <Image
           className={styles.image}
           src="/images/fog.gif"
@@ -55,7 +61,7 @@ const LogoImages = () => {
           height={50}
           alt="rainy-snowy"
         />
-      </div>
+      </motion.div>
     </div>
   );
 };
