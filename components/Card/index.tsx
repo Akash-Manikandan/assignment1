@@ -11,7 +11,7 @@ const Card = ({ title, content }: { title: string; content: string }) => {
       viewport={{ once: true }}
     >
       <div className={styles.title}>{title}</div>
-      <div>{content}</div>
+      <article>{content}</article>
     </motion.main>
   );
 };

@@ -43,7 +43,7 @@ const Section6 = () => {
             &#9733;&#9733;&#9733;&#9733;&#9733;
           </motion.div>
         </div>
-        <motion.div
+        <motion.aside
           className={styles.content}
           initial={{ scale: 0 }}
           whileInView={{ scale: 1 }}
@@ -53,7 +53,7 @@ const Section6 = () => {
           “Sed ut perspiciatis unde omnis iste natus error sit voluptatem
           accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae
           ab illo inventore veritatis et quasi architecto beatae”
-        </motion.div>
+        </motion.aside>
         <div className={styles.bottomContainer}>
           <motion.div
             className={styles.bottomImageContainer}
