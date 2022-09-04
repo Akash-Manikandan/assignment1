@@ -6,3 +6,13 @@
   justify-content: center;
   flex-direction: column;
 }
+.progressBar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 6px;
+  background: #fbb900ef;
+  transform-origin: 0%;
+  z-index: 10;
+}
