@@ -1,7 +1,7 @@
 import React from "react";
 import Card from "../Card";
 import styles from "./Section7.module.scss";
-const Section = () => {
+const Section7 = () => {
   return (
     <section className={styles.container}>
       <Card title={`Lorem Ipsum`} content={`Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua`} />
@@ -11,4 +11,4 @@ const Section = () => {
   );
 };
 
-export default Section;
+export default Section7;
