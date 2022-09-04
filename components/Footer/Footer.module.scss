@@ -70,7 +70,9 @@
   gap: 20px;
   grid-template-columns: repeat(4, 1fr);
   width: 100%;
-  
+  a:hover {
+    cursor: pointer;
+  }
 }
 .socialMedia {
   display: flex;
@@ -79,16 +81,19 @@
   gap: 20px;
   width: 100%;
   padding: 20px;
+  img:hover {
+    cursor: pointer;
+  }
 }
 
 @media screen and (max-width: 800px) {
-  .container{
+  .container {
     width: 90%;
   }
   .cardContainer {
     flex-direction: column;
   }
-  .bottomC{
+  .bottomC {
     padding: 0;
   }
 }
