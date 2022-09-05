@@ -23,7 +23,7 @@ const Header = () => {
         initial={{ scale: 0.1 }}
         animate={{ scale: 1 }}
         transition={{ duration: 1 }}
-        viewport={{once:true}}
+        viewport={{ once: true }}
       >
         <div className={styles.logo}>
           <Image src="/images/svce.png" width={160} height={35} alt="SVCE" />
@@ -62,11 +62,13 @@ const Header = () => {
             <a href="#">Events</a>
           </div>
         )}
-        <ThemeProvider theme={theme}>
-          <Button variant="contained" className={styles.button}>
-            Contact Us
-          </Button>
-        </ThemeProvider>
+        {!matches && (
+          <ThemeProvider theme={theme}>
+            <Button variant="contained" className={styles.button}>
+              Contact Us
+            </Button>
+          </ThemeProvider>
+        )}
       </motion.nav>
     </header>
   );

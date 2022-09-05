@@ -77,7 +77,7 @@ const Footer = () => {
           <a>Campus</a>
           <a>Research</a>
           <a>Admission</a>
-          <a>Get in Touch</a>
+          <a>Contact</a>
         </div>
         <motion.div
           className={styles.socialMedia}
