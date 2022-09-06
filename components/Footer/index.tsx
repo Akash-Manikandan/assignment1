@@ -63,7 +63,7 @@ const Footer = () => {
           viewport={{ once: true }}
         >
           <div>
-            <Image src="/images/svce.png" width={160} height={35} alt="SVCE" />
+            <Image src="/images/lion.png" width={80} height={60} alt="Lion" />
           </div>
           <address>
             Post Bag No.1 <br />

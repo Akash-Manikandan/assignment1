@@ -26,7 +26,7 @@ const Header = () => {
         viewport={{ once: true }}
       >
         <div className={styles.logo}>
-          <Image src="/images/svce.png" width={160} height={35} alt="SVCE" />
+          <Image src="/images/lion.png" width={80} height={50} alt="Lion" />
         </div>
         {!matches ? (
           <div className={styles.links}>
