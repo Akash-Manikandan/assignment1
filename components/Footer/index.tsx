@@ -79,6 +79,11 @@ const Footer = () => {
           <a>Admission</a>
           <a>Contact</a>
         </div>
+        <style jsx>{`
+          a:hover {
+            cursor: pointer;
+          }
+        `}</style>
         <motion.div
           className={styles.socialMedia}
           initial={{ opacity: 0 }}
