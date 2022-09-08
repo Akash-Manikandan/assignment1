@@ -1,3 +1,9 @@
+.outerContainer{
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  gap: 20px;
+}
 .container {
   display: flex;
   width: 100%;

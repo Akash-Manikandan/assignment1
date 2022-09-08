@@ -35,7 +35,6 @@ const Home: NextPage = () => {
       <LogoImages />
       <Section4 />
       <Section5 />
-      <Section6 />
       <Section7 />
       <Footer />
     </div>

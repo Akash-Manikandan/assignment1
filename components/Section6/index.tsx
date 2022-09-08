@@ -2,7 +2,7 @@ import { motion } from "framer-motion";
 import Image from "next/image";
 import React from "react";
 import styles from "./Section6.module.scss";
-const Section6 = () => {
+const Section6 = ({id}:{id:number}) => {
   return (
     <section className={styles.container}>
       <motion.div
@@ -15,11 +15,11 @@ const Section6 = () => {
       >
         <Image
           className={styles.image}
-          src="/images/tiger.jpg"
+          src={`/images/tiger${id}.jpg`}
           alt="tiger"
           width={2400}
           height={2400}
-          loading="lazy"
+          priority
         />
       </motion.div>
       <div className={styles.innerContainer}>
