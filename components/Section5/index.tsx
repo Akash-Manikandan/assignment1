@@ -29,18 +29,18 @@ const Section5 = () => {
         viewport={{ once: true }}
         transition={{ duration: 1 }}
       >
-        <select name="Lorem ipsum dolor" id="Lorem ipsum dolor">
+        <select name="Select service category" id="Select service category">
           <option value="">Select service category</option>
-          <option value="omnis voluptas assumenda est, omnis dolor">
+          <option value="Tackle Climate Change">
             Tackle Climate Change
           </option>
-          <option value="Temporibus autem quibusdam">
+          <option value="Protect Land">
             Protect Land &amp; Water
           </option>
-          <option value="praesentium voluptatum deleniti ">
+          <option value="Provide Food">
             Provide Food &amp; Water Sustainably
           </option>
-          <option value="alias consequatur aut">Build Healthy Cities</option>
+          <option value="Build Healthy">Build Healthy Cities</option>
         </select>
       </motion.div>
       <div className={styles.list}>
