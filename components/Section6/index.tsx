@@ -66,8 +66,8 @@ const Section6 = () => {
               <Image src="/images/man.png" alt="man" width={50} height={50} />
             </div>
             <div className={styles.nameUniv}>
-              <div>vitae dicta</div>
-              <div>sunt explicabo</div>
+              <div>AIMEE FARNUM</div>
+              <div>Science Teacher, Greenwich, CT</div>
             </div>
             <div className={styles.line}></div>
             <div>
