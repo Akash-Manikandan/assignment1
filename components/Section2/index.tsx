@@ -29,7 +29,7 @@ const Section2 = () => {
           transition={{ duration: 0.5 }}
           viewport={{ once: true }}
         >
-          Check out some of the amazing submissions to this year's Global Photo
+          Check out some of the amazing submissions to this year&apos;s Global Photo
           Contest before winners are announced September 22!
         </motion.div>
         <motion.div
