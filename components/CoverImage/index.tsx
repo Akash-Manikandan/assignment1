@@ -30,59 +30,59 @@ const CoverImage = () => {
       >
         <Image
           className={styles.image}
-          src="/images/javascript.gif"
+          src="/images/alpaca.gif"
           width={50}
           height={50}
-          alt="javascript"
+          alt="alpaca"
         />
         <Image
           className={styles.image}
-          src="/images/ruby.png"
+          src="/images/bee.gif"
           width={50}
           height={50}
-          alt="ruby"
+          alt="bee"
         />
         <Image
           className={styles.image}
-          src="/images/c++.png"
+          src="/images/butterfly.gif"
           width={50}
           height={50}
-          alt="c++"
+          alt="butterfly"
         />
         <Image
           className={styles.image}
-          src="/images/github.gif"
+          src="/images/crab.gif"
           width={50}
           height={50}
-          alt="github"
+          alt="crab"
         />
         <Image
           className={styles.image}
-          src="/images/svelte.png"
+          src="/images/unicorn.gif"
           width={50}
           height={50}
-          alt="svelte"
+          alt="unicorn"
         />
         <Image
           className={styles.image}
-          src="/images/python.gif"
+          src="/images/fox.gif"
           width={50}
           height={50}
-          alt="python"
+          alt="fox"
         />
         <Image
           className={styles.image}
-          src="/images/mongo.png"
+          src="/images/hedgehog.gif"
           width={50}
           height={50}
-          alt="mongo"
+          alt="hedgehog"
         />
         <Image
           className={styles.image}
-          src="/images/postgres.png"
+          src="/images/squirrel.gif"
           width={50}
           height={50}
-          alt="postgres"
+          alt="squirell"
         />
         <Image
           className={styles.image}

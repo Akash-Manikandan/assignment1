@@ -10,7 +10,7 @@ const Section6 = () => {
         initial={{ scale: 0 }}
         whileInView={{ scale: 1 }}
         transition={{ duration: 1 }}
-        viewport={{once:true}}
+        viewport={{ once: true }}
         whileHover={{ scale: 1.03 }}
       >
         <Image
@@ -27,17 +27,17 @@ const Section6 = () => {
           <motion.div
             className={styles.text}
             initial={{ opacity: 0 }}
-            viewport={{once:true}}
+            viewport={{ once: true }}
             whileInView={{ opacity: 1 }}
             transition={{ duration: 1, delay: 0.5 }}
           >
-            Testimonials
+            OUR MISSION
           </motion.div>
           <motion.div
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
             transition={{ duration: 1, delay: 0.5 }}
-            viewport={{once:true}}
+            viewport={{ once: true }}
             className={styles.star}
           >
             &#9733;&#9733;&#9733;&#9733;&#9733;
@@ -48,11 +48,11 @@ const Section6 = () => {
           initial={{ scale: 0 }}
           whileInView={{ scale: 1 }}
           transition={{ duration: 1, delay: 0.7 }}
-          viewport={{once:true}}
+          viewport={{ once: true }}
         >
-          “Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-          accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae
-          ab illo inventore veritatis et quasi architecto beatae”
+          “Every acre we protect and every river mile we restore begins with
+          you. Your support helps us take on the dual threats of climate change
+          and biodiversity loss across 70+ countries and territories.”
         </motion.aside>
         <div className={styles.bottomContainer}>
           <motion.div
@@ -60,7 +60,7 @@ const Section6 = () => {
             initial={{ scale: 0 }}
             whileInView={{ scale: 1 }}
             transition={{ duration: 1, delay: 0.8 }}
-            viewport={{once:true}}
+            viewport={{ once: true }}
           >
             <div>
               <Image src="/images/man.png" alt="man" width={50} height={50} />

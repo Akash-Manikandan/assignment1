@@ -26,28 +26,28 @@ const Section5 = () => {
         className={styles.select}
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1 }}
-        viewport={{once:true}}
+        viewport={{ once: true }}
         transition={{ duration: 1 }}
       >
         <select name="Lorem ipsum dolor" id="Lorem ipsum dolor">
           <option value="">Select service category</option>
           <option value="omnis voluptas assumenda est, omnis dolor">
-            omnis voluptas assumenda est, omnis dolor
+            Tackle Climate Change
           </option>
           <option value="Temporibus autem quibusdam">
-            Temporibus autem quibusdam
+            Protect Land &amp; Water
           </option>
           <option value="praesentium voluptatum deleniti ">
-            praesentium voluptatum deleniti{" "}
+            Provide Food &amp; Water Sustainably
           </option>
-          <option value="alias consequatur aut">alias consequatur aut</option>
+          <option value="alias consequatur aut">Build Healthy Cities</option>
         </select>
       </motion.div>
       <div className={styles.list}>
         <motion.a
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
-          viewport={{once:true}}
+          viewport={{ once: true }}
           transition={{ duration: 1, delay: 0.2 }}
           onClick={() => setId(0)}
           style={{
@@ -55,12 +55,12 @@ const Section5 = () => {
             color: id == 0 ? "white" : "black",
           }}
         >
-          Autem
+          Bengal Tiger
         </motion.a>
         <motion.a
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
-          viewport={{once:true}}
+          viewport={{ once: true }}
           transition={{ duration: 1, delay: 0.4 }}
           onClick={() => setId(1)}
           style={{
@@ -68,46 +68,46 @@ const Section5 = () => {
             color: id == 1 ? "white" : "black",
           }}
         >
-          Deleniti
+          Asiatic Lion
         </motion.a>
         <motion.a
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
           transition={{ duration: 1, delay: 0.6 }}
-          viewport={{once:true}}
+          viewport={{ once: true }}
           onClick={() => setId(2)}
           style={{
             backgroundColor: id == 2 ? list[id].color : "transparent",
             color: id == 2 ? "white" : "black",
           }}
         >
-          Tempo
+          Nilgiri Tahr
         </motion.a>
         <motion.a
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
           transition={{ duration: 1, delay: 0.8 }}
-          viewport={{once:true}}
+          viewport={{ once: true }}
           onClick={() => setId(3)}
           style={{
             backgroundColor: id == 3 ? list[id].color : "transparent",
             color: id == 3 ? "white" : "black",
           }}
         >
-          Autum
+          Red Panda
         </motion.a>
         <motion.a
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
           transition={{ duration: 1, delay: 1 }}
-          viewport={{once:true}}
+          viewport={{ once: true }}
           onClick={() => setId(4)}
           style={{
             backgroundColor: id == 4 ? list[id].color : "transparent",
             color: id == 4 ? "white" : "black",
           }}
         >
-          Omnis
+          Hangul
         </motion.a>
       </div>
     </section>

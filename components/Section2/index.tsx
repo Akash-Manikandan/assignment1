@@ -18,25 +18,25 @@ const Section2 = () => {
         initial={{ x: -280 }}
         whileInView={{ x: 0 }}
         transition={{ duration: 0.5 }}
-        viewport={{once:true}}
+        viewport={{ once: true }}
       >
-        At vero eos et accusamus iusto odio dignissimos.
+        Our 2022 Global Photo Contest
       </motion.div>
       <div className={styles.content2}>
         <motion.div
           initial={{ x: 280 }}
           whileInView={{ x: 0 }}
           transition={{ duration: 0.5 }}
-          viewport={{once:true}}
+          viewport={{ once: true }}
         >
-          Et harum quidem rerum facilis est et expedita distinctio. Nam libero
-          tempore, cum soluta nobis est eligendi
+          Check out some of the amazing submissions to this year's Global Photo
+          Contest before winners are announced September 22!
         </motion.div>
         <motion.div
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
           transition={{ duration: 0.5, delay: 0.3 }}
-          viewport={{once:true}}
+          viewport={{ once: true }}
         >
           <ThemeProvider theme={theme}>
             <Button variant="contained" className={styles.button}>

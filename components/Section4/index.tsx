@@ -11,25 +11,25 @@ const Section4 = () => {
         initial={{ x: -100 }}
         whileInView={{ x: 0 }}
         transition={{ duration: 1 }}
-        viewport={{once:true}}
+        viewport={{ once: true }}
       >
-        Optio Cumque
+        A Future Where People and Nature Thrive
       </motion.div>
       <div className={styles.innerContainer1}>
         <motion.div
           initial={{ x: 100 }}
           whileInView={{ x: 0 }}
           transition={{ duration: 1 }}
-          viewport={{once:true}}
+          viewport={{ once: true }}
           className={styles.content1}
         >
-          aut rerum
+          Our Priorities
         </motion.div>
         <motion.div
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
           transition={{ duration: 1, delay: 1 }}
-          viewport={{once:true}}
+          viewport={{ once: true }}
           className={styles.content2}
         >
           <div className={styles.image1}>
@@ -66,12 +66,12 @@ const Section4 = () => {
       <motion.div
         initial={{ y: 100 }}
         whileInView={{ y: 0 }}
-        viewport={{once:true}}
+        viewport={{ once: true }}
         transition={{ duration: 1 }}
         className={styles.innerContainer2}
       >
-        et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum
-        deleniti atque of real estate.
+        By maximizing our ability to effect change between now and 2030, we can
+        shape a brighter future for people and our planet.
       </motion.div>
     </section>
   );

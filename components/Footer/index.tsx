@@ -24,14 +24,14 @@ const Footer = () => {
           transition={{ duration: 1 }}
           viewport={{ once: true }}
         >
-          <div className={styles.title}>Sed ut perspiciatis</div>
+          <div className={styles.title}>Who We Are</div>
           <summary className={styles.content}>
-            Et harum quidem rerum facilis est et expedita distinctio. Nam libero
-            tempore, cum soluta nobis est eligendi.
+            We impact conservation in more than 70 countries and territories
+            thanks to our members, staff and scientists.
           </summary>
           <ThemeProvider theme={theme}>
             <Button variant="contained" className={styles.button}>
-              Book Demo
+              Donate
             </Button>
           </ThemeProvider>
         </motion.div>
@@ -42,14 +42,15 @@ const Footer = () => {
           transition={{ duration: 1 }}
           viewport={{ once: true }}
         >
-          <div className={styles.title}>Nemo enim ipsam</div>
+          <div className={styles.title}>What We Do</div>
           <summary className={styles.content}>
-            At vero eos et accusamus et iusto odio dignissimos ducimus qui
-            blanditiis praesentium voluptatum deleniti.
+            Guided by science and equity, we find paths to solve climate change
+            and biodiversity loss. We’re determined to make a major difference
+            by 2030.
           </summary>
           <ThemeProvider theme={theme}>
             <Button variant="contained" className={styles.button}>
-              Request Callback
+              Discover
             </Button>
           </ThemeProvider>
         </motion.div>

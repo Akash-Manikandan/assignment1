@@ -24,7 +24,7 @@ const Section1 = () => {
           viewport={{ once: true }}
           transition={{ duration: 1 }}
         >
-          Lorem ipsum dolor sit amet, consectetur
+          Restoring Nature, Building Community
         </motion.div>
       </div>
       <div></div>
@@ -36,7 +36,7 @@ const Section1 = () => {
             transition={{ duration: 0.5 }}
             viewport={{ once: true }}
           >
-            Except sint occaecat
+            We Can’t Save Nature Without 
           </motion.div>
           <motion.div
             initial={{ x: -320 }}
@@ -45,20 +45,22 @@ const Section1 = () => {
             viewport={{ once: true }}
             className={styles.colorText}
           >
-            cupidatat
+            You
           </motion.div>
         </div>
       </div>
-      <motion.div
+      <motion.article
         className={styles.rightContent}
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1 }}
         viewport={{ once: true }}
         transition={{ duration: 1, delay: 1 }}
       >
-        Sed ut perspiciatis unde omnis iste natus error accusantium doloremque
-        laudantium, totam rem aperiam illo inventore veritatis et.
-      </motion.div>
+        With 8% of the Earth’s biodiversity, India is home to spectacular and
+        diverse natural places, and unique wildlife. India recognizes the need
+        to protect its natural heritage for its intrinsic values, and the
+        well-being of its people. 
+      </motion.article>
       <CoverImage />
     </section>
   );
