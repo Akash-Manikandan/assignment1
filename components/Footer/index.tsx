@@ -75,9 +75,9 @@ const Footer = () => {
           </address>
         </motion.div>
         <div className={styles.links}>
-          <a>Campus</a>
-          <a>Research</a>
-          <a>Admission</a>
+          <a>Membership</a>
+          <a>Volunteer</a>
+          <a>Donate</a>
           <a>Contact</a>
         </div>
         <style jsx>{`

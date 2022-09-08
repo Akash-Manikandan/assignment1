@@ -37,6 +37,7 @@ const Home: NextPage = () => {
       <Section5 />
       <Section7 />
       <Footer />
+      <p style={{margin:0}}>&copy; 2022 Akash M INT-A</p>
     </div>
   );
 };
