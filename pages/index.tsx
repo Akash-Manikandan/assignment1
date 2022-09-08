@@ -37,9 +37,9 @@ const Home: NextPage = () => {
       <Section5 />
       <Section7 />
       <Footer />
-      <pre style={{ margin: 0, fontSize: 16, marginBottom: 4 }}>
+      <p style={{ margin: 0, fontSize: 16, marginBottom: 4 }}>
         &copy; 2022 Akash M INT-A
-      </pre>
+      </p>
     </div>
   );
 };
