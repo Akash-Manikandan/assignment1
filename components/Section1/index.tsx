@@ -36,7 +36,7 @@ const Section1 = () => {
             transition={{ duration: 0.5 }}
             viewport={{ once: true }}
           >
-            We Can’t Save Nature Without 
+            We Can&apos;t Save Nature Without 
           </motion.div>
           <motion.div
             initial={{ x: -320 }}
@@ -56,7 +56,7 @@ const Section1 = () => {
         viewport={{ once: true }}
         transition={{ duration: 1, delay: 1 }}
       >
-        With 8% of the Earth’s biodiversity, India is home to spectacular and
+        With 8% of the Earth&apos;s biodiversity, India is home to spectacular and
         diverse natural places, and unique wildlife. India recognizes the need
         to protect its natural heritage for its intrinsic values, and the
         well-being of its people. 
