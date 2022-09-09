@@ -39,7 +39,7 @@ const Section1 = () => {
             We Can&apos;t Save Nature Without 
           </motion.div>
           <motion.div
-            initial={{ x: -320 }}
+            initial={{ x: -180 }}
             whileInView={{ x: 0 }}
             transition={{ duration: 0.5, delay: 0.5 }}
             viewport={{ once: true }}

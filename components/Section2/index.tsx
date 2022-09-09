@@ -15,7 +15,7 @@ const Section2 = () => {
     <section className={styles.container}>
       <motion.div
         className={styles.content1}
-        initial={{ x: -280 }}
+        initial={{ x: -180 }}
         whileInView={{ x: 0 }}
         transition={{ duration: 0.5 }}
         viewport={{ once: true }}
@@ -24,7 +24,7 @@ const Section2 = () => {
       </motion.div>
       <div className={styles.content2}>
         <motion.div
-          initial={{ x: 280 }}
+          initial={{ x: 180 }}
           whileInView={{ x: 0 }}
           transition={{ duration: 0.5 }}
           viewport={{ once: true }}
