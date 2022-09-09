@@ -34,6 +34,9 @@
 .star {
   color: #ffd400;
   font-size: 30px;
+  display: flex;
+  align-items: center;
+  text-align: center;
 }
 .content {
   font-size: 1.5rem;
@@ -61,14 +64,14 @@
   background-color: rgba(0, 0, 0, 0.2);
 }
 @media screen and (max-width: 800px) {
-  .container{
-      flex-direction: column;
+  .container {
+    flex-direction: column;
   }
 }
 @media screen and (max-width: 600px) {
-  .textContainer{
-      flex-direction: column;
-      gap: 20px;
+  .textContainer {
+    flex-direction: column;
+    gap: 20px;
   }
   .container {
     width: 85%;
