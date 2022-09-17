@@ -8,10 +8,12 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  gap: 10px;
 }
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 600px) {
   .latLong {
     flex-direction: column;
+    gap: 0;
   }
   .container {
     align-items: flex-start;
