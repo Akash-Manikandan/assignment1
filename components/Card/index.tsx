@@ -7,7 +7,7 @@ const Card = ({ title, content }: { title: string; content: string }) => {
       initial={{ opacity: 0 }}
       whileInView={{ opacity: 1 }}
       transition={{ duration: 1 }}
-      whileTap={{ scale: 0.5 }}
+      whileTap={{ scale: 0.9 }}
       className={styles.container}
       viewport={{ once: true }}
     >

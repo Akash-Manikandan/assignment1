@@ -1,6 +1,6 @@
 import { ThemeProvider } from "@emotion/react";
 import { Button, createTheme } from "@mui/material";
-import React from "react";
+import React, { useEffect, useState } from "react";
 import Image from "next/image";
 import styles from "./Footer.module.scss";
 import { motion } from "framer-motion";
@@ -13,6 +13,21 @@ const theme = createTheme({
   },
 });
 const Footer = () => {
+  const [count, setCounter] = useState(0);
+  const handle = async () => {
+    const c: any = localStorage.getItem("count");
+    if (c == null) {
+      localStorage.setItem("count", "1");
+      setCounter(1);
+    } else {
+      localStorage.setItem("count", String(Number(c) + 1));
+      setCounter(Number(c) + 1);
+    }
+  };
+  useEffect(() => {
+    handle();
+  }, []);
+
   return (
     <footer className={styles.container}>
       <div className={styles.text}>Ready to get started?</div>
@@ -122,6 +137,9 @@ const Footer = () => {
           />
         </motion.div>
       </div>
+      <aside className={styles.counter}>
+        You visited this site : {count} times
+      </aside>
     </footer>
   );
 };

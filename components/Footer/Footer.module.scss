@@ -84,7 +84,9 @@
     cursor: pointer;
   }
 }
-
+.counter {
+  padding-left: 20px;
+}
 @media screen and (max-width: 800px) {
   .container {
     width: 90%;
@@ -93,6 +95,9 @@
     flex-direction: column;
   }
   .bottomC {
+    padding: 0;
+  }
+  .counter{
     padding: 0;
   }
 }

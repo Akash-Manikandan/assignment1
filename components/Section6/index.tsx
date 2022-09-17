@@ -1,6 +1,7 @@
 import { motion } from "framer-motion";
 import Image from "next/image";
 import React from "react";
+
 import styles from "./Section6.module.scss";
 const Section6 = ({id}:{id:number}) => {
   return (
