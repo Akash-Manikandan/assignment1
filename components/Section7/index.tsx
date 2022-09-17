@@ -53,7 +53,7 @@ const Section7 = () => {
       <div className={styles.container}>
         {items.map((item) => {
           return (
-            <div className={styles.listContainer}>
+            <div key={item.id} className={styles.listContainer}>
               <Card title={item.title} content={item.content} />
             </div>
           );
