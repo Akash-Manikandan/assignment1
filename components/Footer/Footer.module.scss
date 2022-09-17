@@ -71,7 +71,6 @@
   gap: 20px;
   grid-template-columns: repeat(4, 1fr);
   width: 100%;
-  
 }
 .socialMedia {
   display: flex;
@@ -83,6 +82,11 @@
   img:hover {
     cursor: pointer;
   }
+}
+.countLoc {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 .counter {
   padding-left: 20px;
@@ -97,7 +101,7 @@
   .bottomC {
     padding: 0;
   }
-  .counter{
+  .counter {
     padding: 0;
   }
 }
@@ -114,5 +118,9 @@
 @media screen and (max-width: 500px) {
   .links {
     grid-template-columns: repeat(2, 1fr);
+  }
+  .countLoc {
+    flex-direction: column;
+    align-items: flex-start;
   }
 }

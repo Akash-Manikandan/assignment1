@@ -1,0 +1,21 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  align-items: center;
+}
+.latLong {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+@media screen and (max-width: 500px) {
+  .latLong {
+    flex-direction: column;
+  }
+  .container {
+    align-items: flex-start;
+    padding-top: 5px;
+    gap: 0;
+  }
+}

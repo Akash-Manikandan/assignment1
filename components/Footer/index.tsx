@@ -4,6 +4,7 @@ import React, { useEffect, useState } from "react";
 import Image from "next/image";
 import styles from "./Footer.module.scss";
 import { motion } from "framer-motion";
+import LocationApi from "../LocationApi";
 
 const theme = createTheme({
   palette: {
@@ -137,9 +138,12 @@ const Footer = () => {
           />
         </motion.div>
       </div>
-      <aside className={styles.counter}>
-        You visited this site : {count} times
-      </aside>
+      <div className={styles.countLoc}>
+        <aside className={styles.counter}>
+          You visited this site : {count} times
+        </aside>
+        <LocationApi />
+      </div>
     </footer>
   );
 };
