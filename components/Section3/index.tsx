@@ -1,6 +1,7 @@
 import { motion } from "framer-motion";
 import Image from "next/image";
 import React, { useState } from "react";
+import { isMobile } from "react-device-detect";
 import { Parallax, ParallaxProvider } from "react-scroll-parallax";
 import styles from "./Section3.module.scss";
 const Section3 = () => {
@@ -10,7 +11,7 @@ const Section3 = () => {
     <ParallaxProvider>
       <section className={styles.container}>
         <Parallax
-          speed={15}
+          speed={!isMobile ? 50 : 20}
           onProgressChange={(progress) => setProgress(progress)}
         >
           <motion.div
@@ -51,7 +52,7 @@ const Section3 = () => {
           </motion.div>
         </Parallax>
         <Parallax
-          speed={-15}
+          speed={!isMobile ? -50 : -20}
           onProgressChange={(progress) => setProgress(progress)}
         >
           <motion.div
