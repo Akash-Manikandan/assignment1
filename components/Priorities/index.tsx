@@ -24,6 +24,7 @@ const Priorities = () => {
         variants={svgVariants}
         initial="hidden"
         whileInView="visible"
+        viewport={{ once: true }}
       >
         <g transform="translate(84.85499382019043, 95.19000053405762)">
           <motion.path
