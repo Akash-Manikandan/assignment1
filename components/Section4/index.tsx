@@ -1,6 +1,7 @@
 import { motion } from "framer-motion";
 import Image from "next/image";
 import React from "react";
+import Priorities from "../Priorities";
 import styles from "./Section4.module.scss";
 
 const Section4 = () => {
@@ -23,7 +24,7 @@ const Section4 = () => {
           viewport={{ once: true }}
           className={styles.content1}
         >
-          Our Priorities
+          <Priorities />
         </motion.div>
         <motion.div
           initial={{ opacity: 0 }}
