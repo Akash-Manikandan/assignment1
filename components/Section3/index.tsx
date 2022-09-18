@@ -24,7 +24,7 @@ const Section3 = () => {
           >
             <Image
               className={styles.image}
-              loading="lazy"
+              priority
               src="/images/catpic.jpg"
               width={3648}
               height={5472}
@@ -69,7 +69,7 @@ const Section3 = () => {
               height={5184}
               alt="bunny"
               className={styles.image}
-              loading="lazy"
+              priority
             />
           </motion.div>
         </Parallax>
