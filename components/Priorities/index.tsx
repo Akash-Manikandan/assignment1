@@ -9,7 +9,7 @@ const svgVariants = {
     transition: { duration: 1 },
   },
 };
-const transition = { duration: 2, yoyo: Infinity, ease: "easeInOut" };
+const transition = { duration: 2, repeat: Infinity, ease: "easeInOut" };
 
 const Priorities = () => {
   return (
@@ -26,6 +26,7 @@ const Priorities = () => {
         whileInView="visible"
         viewport={{ once: true }}
       >
+        <canvas></canvas>
         <g transform="translate(84.85499382019043, 95.19000053405762)">
           <motion.path
             initial={{ pathLength: 0 }}
