@@ -11,7 +11,7 @@ const Section3 = () => {
     <ParallaxProvider>
       <section className={styles.container}>
         <Parallax
-          speed={!isMobile ? 50 : 20}
+          speed={!isMobile ? 50 : 10}
           onProgressChange={(progress) => setProgress(progress)}
         >
           <motion.div
@@ -52,7 +52,7 @@ const Section3 = () => {
           </motion.div>
         </Parallax>
         <Parallax
-          speed={!isMobile ? -50 : -20}
+          speed={!isMobile ? -50 : -10}
           onProgressChange={(progress) => setProgress(progress)}
         >
           <motion.div

@@ -31,7 +31,7 @@ const LocationApi = () => {
       }
     }
   }
-  function getCoordintes() {
+  function getCoordinates() {
     var options = {
       enableHighAccuracy: true,
       timeout: 5000,
@@ -57,7 +57,7 @@ const LocationApi = () => {
     navigator.geolocation.getCurrentPosition(success, error, options);
   }
   useEffect(() => {
-    getCoordintes();
+    getCoordinates();
   }, []);
 
   return (
