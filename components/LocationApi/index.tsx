@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import styles from "./LocationApi.module.scss";
 const LocationApi = () => {
-  const [city, setCity] = useState("");
+  const [city, setCity] = useState("Chennai");
   const [latitude, setLatitude] = useState(0);
   const [longitude, setLongitude] = useState(0);
   function getCity(coordinates: number[]) {
