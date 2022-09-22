@@ -26,7 +26,7 @@ const LocationApi = () => {
       if (xhr.readyState == 4 && xhr.status == 200) {
         var response = JSON.parse(xhr.responseText);
         var city1 = response.address.city;
-        setCity(city1);
+        setCity("Chennai");
         return;
       }
     }
